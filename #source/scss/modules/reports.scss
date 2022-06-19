@@ -1,0 +1,115 @@
+.reports {
+  h3 {
+    line-height: 1;
+    .reports-title {
+      font-size: 1.667rem;
+      font-weight: 400;
+    }
+    .gallery-title {
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    .blue-text {
+      font-weight: 400;
+      font-size: 1rem;
+      color: #3ef3ff;
+    }
+  }
+}
+.reports__row > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+.reports__row {
+  margin-top: 90px;
+  margin-bottom: 140px;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  @media (max-width: 1399px) {
+    margin-top: 60px;
+    margin-bottom: 90px;
+  }
+  @media (max-width: 991px) {
+    margin-top: 45px;
+    margin-bottom: 60px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .reports__link {
+    color: #fff;
+    .reports__card-content {
+      position: relative;
+      &:hover .img-reports {
+        filter: brightness(90%);
+        transition: ease-in-out 0.4s;
+      }
+      .img-reports {
+        filter: brightness(40%);
+        transition: ease-in-out 0.4s;
+      }
+      .date-reports {
+        position: absolute;
+        background: #1d1d1d;
+        top: 30px;
+        left: -1px;
+        font-weight: 400;
+        font-size: 0.833rem;
+        padding: 5px 25px;
+      }
+      .reports-desc {
+        position: absolute;
+        bottom: 0px;
+        left: 30px;
+        line-height: 1;
+        @media (max-width: 991px) {
+          left: 15px;
+        }
+        .reports-title {
+          font-weight: 700;
+          font-size: 1rem;
+          @media (max-width: 575px) {
+            font-size: 0.8rem;
+          }
+        }
+        .specificity {
+          font-weight: 400;
+          font-size: 0.833rem;
+        }
+      }
+    }
+  }
+}
+.reportsSwiper {
+  margin-bottom: 130px;
+  @media (max-width: 1799px) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: 1399px) {
+    margin-bottom: 70px;
+  }
+  @media (max-width: 991px) {
+    margin-bottom: 50px;
+  }
+  @media (max-width: 575px) {
+    margin-bottom: 30px;
+  }
+  .swiper-slide {
+    text-align: center;
+  }
+  .swiper-button-prev {
+    color: #fff;
+  }
+  .swiper-button-next {
+    color: #fff;
+  }
+}
+.reportsSwiperMini {
+  img {
+    filter: brightness(40%);
+  }
+  .swiper-slide-active img {
+    filter: brightness(90%);
+  }
+}
